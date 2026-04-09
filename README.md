@@ -1,79 +1,90 @@
-# Laravel Application - Web Development Project
+# Biodata Web (Laravel 8 / PHP)
 
-A dynamic web application built using Laravel, showcasing routing, views, controllers, and Blade templating. This project emphasizes modular architecture, structured MVC design, and a clean user experience.
-
----
-
-## Table of Contents
-- [Introduction](#introduction)
-- [Features](#features)
-- [Technologies Used](#technologies-used)
-- [Setup Instructions](#setup-instructions)
-- [Usage](#usage)
-- [Project Status](#project-status)
+Nov 17, 2021 | Built in 11th grade (Semester 1) | This Laravel web project is a simple **biodata / personal profile website** to practice basic Laravel routing, Blade views, and simple page navigation (Home, About, Profile).
 
 ---
 
-## Introduction
+## Preview (Screenshots)
 
-This Laravel project is created to demonstrate modern web application development practices using PHP and Laravel framework. The project includes a modular design with controllers and Blade templates for reusable components and dynamic web pages.
+| Home | About | Profile |
+|---|---|---|
+| ![Home](docs/home.png) | ![About](docs/about.png) | ![Profile](docs/profile.png) |
 
 ---
 
 ## Features
-- Modular MVC architecture featuring routes, controllers, and views.
-- Dynamic rendering of content using Blade templates.
-- Profile and About pages showcasing personal and character details dynamically.
-- Inventory management with data models and seamless web navigation.
-- User-friendly interface with clean design principles.
+
+- Home page
+- About page
+- Profile page (biodata)
+- Simple navigation between pages
+- Laravel Blade-based UI
 
 ---
 
-## Technologies Used
-- PHP with Laravel Framework
-- Blade Templating Engine
-- HTML, CSS for frontend design
-- Composer for dependency management
+## Tech Stack
+
+- **Language:** PHP  
+- **Framework:** Laravel 8  
+- **Package Manager:** Composer  
+- **Frontend Tooling:** Laravel Mix (Webpack)  
+- **Server (Local):** PHP built-in server / Laravel Artisan serve  
+- **PHP Version:** ^7.3 or ^8.0  
 
 ---
 
-## Setup Instructions
+## Project Structure (High Level)
 
-1. **Clone the repository**:
+- `app/` - Application source code (controllers, etc.)
+- `routes/` - Web routes
+- `resources/views/` - Blade templates (UI)
+- `public/` - Public web root (assets entry)
+- `config/` - Laravel configuration
+- `database/` - Migrations/seeders (if used)
+- `docs/` - Screenshots for README
+- `composer.json` - PHP dependencies
+- `package.json` + `webpack.mix.js` - Frontend build tooling
+
+---
+
+## Getting Started
+
+### Requirements
+- PHP (7.3+ recommended)
+- Composer
+- (Optional) Node.js + npm (if you want to build frontend assets)
+
+### Run Locally
+1. Clone the repository:
    ```bash
    git clone https://github.com/Aryosetowmn/webdev_kelas11semester1_port6.git
    ```
-2. Navigate to the project directory:
-   ```bash
-   cd webdev_kelas11semester1_port6
-   ```
-3. Install dependencies:
+2. Install dependencies:
    ```bash
    composer install
    ```
-4. Create a `.env` file by copying `.env.example`:
+3. Copy env file & generate app key:
    ```bash
    cp .env.example .env
-   ```
-5. Generate the application key:
-   ```bash
    php artisan key:generate
    ```
-6. Start the application:
+4. Run the app:
    ```bash
    php artisan serve
    ```
+5. Open in browser:
+   - http://127.0.0.1:8000
 
 ---
 
-## Usage
+## Notes
 
-1. Navigate to the home route to explore dynamic pages.
-2. Browse the "About" and "Profile" sections to view individual profiles and descriptions.
-3. Interact with the Inventory module to see the Laravel MVC model in action.
+This repository is intended for learning and portfolio demonstration.  
+For a more “real-world” Laravel app, consider adding database integration, authentication, and a cleaner structure (controllers + validation + models).
 
 ---
 
-## Project Status
+## Author
 
-This project is complete and serves as an educational tool for learning Laravel essentials.
+**Aryosetowmn**  
+Repository: `Aryosetowmn/webdev_kelas11semester1_port6`
